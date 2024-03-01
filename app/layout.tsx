@@ -1,5 +1,6 @@
 import { Footer } from "@/components/footer/layout"
 import { Header } from "@/components/header/layout"
+import '../global.css';
 
 export const metadata = {
   title: 'Next Pract',
