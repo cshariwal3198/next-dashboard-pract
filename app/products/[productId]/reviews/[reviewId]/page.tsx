@@ -2,6 +2,10 @@
 
 import { useRouter } from 'next/navigation';
 
+const getRandom = () => (
+    Math.floor(Math.random() * 10)
+)
+
 export default function ProductReview({
     params: { reviewId, productId }
 }: {
@@ -12,6 +16,10 @@ export default function ProductReview({
     const onClick = () => {
         router.push('/');
     }
+
+    // if (getRandom() > 6) {
+    //     throw new Error('error message')
+    // }
 
     return (
         <div>
