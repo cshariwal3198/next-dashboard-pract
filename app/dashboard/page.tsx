@@ -1,5 +1,10 @@
-export default function DashBoardUI() {
+import StyledLink from "@/components/styled-link";
+
+export default async function DashBoardUI() {
     return (
-        <h5>Dash board page conetent</h5>
+        <div className=" flex flex-col gap-2">
+            <h5>Dash board page content</h5>
+            <StyledLink href='/'>Home</StyledLink>
+        </div>
     )
 }

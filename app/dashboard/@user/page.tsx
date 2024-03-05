@@ -1,4 +1,4 @@
-export default function UserData() {
+export default async function UserData() {
     return (
         <>
             UserData screen UI

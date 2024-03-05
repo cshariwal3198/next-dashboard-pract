@@ -1,6 +1,13 @@
 import React from 'react';
+import Login from './login/page';
 
-export default function DashboardLayout({ children, analytics, notifications, user }: { children: React.ReactNode, user: any, notifications: any, analytics: any }) {
+export default async function DashboardLayout({ children, analytics, notifications, user }: { children: React.ReactNode, user: any, notifications: any, analytics: any }) {
+    const isLoggedIn = true;
+
+    if (!isLoggedIn) {
+        return <Login />
+    }
+
     return (
         <>
             {children}
