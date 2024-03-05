@@ -25,7 +25,6 @@ export default function ProductList() {
                     productsList.map(({ href, name }) => <Link key={href} href={href}>{name}</Link>)
                 }
             </div>
-            <Link href='/dashboard'>Default</Link>  
         </div>
     );
 }
